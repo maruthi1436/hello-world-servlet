@@ -41,7 +41,7 @@ stages {
       archiveArtifacts 'target/*.war'
       }
  }
- stage('Sonarqube') {
+ stage('Sonarqube') { 
     environment {
         scannerHome = tool 'sonarqube'
     }
